@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1522753328 source:c:\users\jerem\documents\projet semestre 4\piscine-master\coords.cpp
+	"coords.h"
+
+1522753099 c:\users\jerem\documents\projet semestre 4\piscine-master\coords.h
+	<cmath>
+
+1522753486 source:c:\users\jerem\documents\projet semestre 4\piscine-master\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1522753589 c:\users\jerem\documents\projet semestre 4\piscine-master\grman.h
+	<allegro.h>
+	<string>
+	"couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1522753192 c:\users\jerem\documents\projet semestre 4\piscine-master\couleurs.h
+
+1522753220 c:\users\jerem\documents\projet semestre 4\piscine-master\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1522753619 source:c:\users\jerem\documents\projet semestre 4\piscine-master\main.cpp
+	<iostream>
+	"grman.h"
+
+1522753552 source:c:\users\jerem\documents\projet semestre 4\piscine-master\widget.cpp
+	"widget.h"
+
