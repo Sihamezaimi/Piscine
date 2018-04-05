@@ -1,0 +1,11 @@
+5
+93 73 SOLEIL.bmp
+90 262 PLante.bmp
+315 340 criquet.bmp
+573 274 souris.bmp
+579 66 serpent.bmp
+4
+0 1
+1 2
+2 3
+3 4

@@ -1,0 +1,83 @@
+# depslib dependency file v1.0
+1522753328 source:c:\users\jerem\documents\projet semestre 4\piscine-master\coords.cpp
+	"coords.h"
+
+1522753099 c:\users\jerem\documents\projet semestre 4\piscine-master\coords.h
+	<cmath>
+
+1522869231 source:c:\users\jerem\documents\projet semestre 4\piscine-master\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	<fstream>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1522753589 c:\users\jerem\documents\projet semestre 4\piscine-master\grman.h
+	<allegro.h>
+	<string>
+	"couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1522753192 c:\users\jerem\documents\projet semestre 4\piscine-master\couleurs.h
+
+1522949827 c:\users\jerem\documents\projet semestre 4\piscine-master\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1522948738 source:c:\users\jerem\documents\projet semestre 4\piscine-master\main.cpp
+	<iostream>
+	"grman.h"
+	"Facile.h"
+	"Bouclejeu.h"
+
+1522868294 source:c:\users\jerem\documents\projet semestre 4\piscine-master\widget.cpp
+	"widget.h"
+
+1522949082 c:\users\jerem\documents\projet semestre 4\piscine-master\include\facile.h
+	<iostream>
+	<stack>
+	<fstream>
+	<vector>
+	<map>
+	<string>
+	<memory>
+	"C:\Users\jerem\Documents\Projet semestre 4\Piscine-master/grman.h"
+
+1522946563 source:c:\users\jerem\documents\projet semestre 4\piscine-master\src\facile.cpp
+	"Facile.h"
+	"sstream"
+	<fstream>
+	<string>
+
+1522945599 c:\users\jerem\documents\projet semestre 4\piscine-master\bouclejeu.h
+	<iostream>
+	"grman.h"
+	"time.h"
+	"Facile.h"
+
+1522805105 c:\users\jerem\documents\projet semestre 4\piscine-master\facile.h
+	<iostream>
+	<stack>
+	<fstream>
+	<vector>
+	<map>
+	<string>
+	<memory>
+	"C:\Users\jerem\Documents\Projet semestre 4\Piscine-master/grman.h"
+
+1522948073 source:c:\users\jerem\documents\projet semestre 4\piscine-master\bouclejeu.cpp
+	"Bouclejeu.h"
+
