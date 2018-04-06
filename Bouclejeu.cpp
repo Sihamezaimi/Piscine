@@ -1,19 +1,17 @@
 #include "Bouclejeu.h"
 
 //Ajout de sommet
-void Boucle::ajoutSommet(int* ajout)
+void Boucle::ajoutSommet(Graph g)
 {
     if(mouse_b & 1)
     {
         if(mouse_x > 40 && mouse_y > 518 && mouse_x<=100 && mouse_y<=578)
         {
-            *ajout= *ajout +1 ;
+
         }
     }
-//    if(ajout==1)
-    {
+    //g.AjoutArcs();
 
-    }
 }
 
 //Suppression de sommet
@@ -45,8 +43,8 @@ void Boucle::bouton_save(Graph g,std::string filename)
     {
         if(mouse_x > 90 && mouse_y > 518 && mouse_x<=150 && mouse_y<=578)
         {
-            g.save_file(filename);
-            std::cout<<"1\n";
+         g.save_file(filename);
+            std::cout<<"1\n"<<std::endl;
         }
     }
 }
@@ -55,6 +53,7 @@ void Boucle::Chargement1(Graph g)
 {
     /// Il faut appeler les méthodes d'update des objets qui comportent des widgets
     g.update();
+
 
     /// Mise à jour générale (clavier/souris/buffer etc...)
     grman::mettre_a_jour();
@@ -148,3 +147,4 @@ std::string Boucle::Menu()
     }
     return choix;
 }
+

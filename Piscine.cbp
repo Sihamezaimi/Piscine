@@ -36,6 +36,8 @@
 		</Compiler>
 		<Unit filename="Bouclejeu.cpp" />
 		<Unit filename="Bouclejeu.h" />
+		<Unit filename="Facile1.cpp" />
+		<Unit filename="Facile1.hpp" />
 		<Unit filename="Graphe.txt" />
 		<Unit filename="coords.cpp" />
 		<Unit filename="coords.h">
@@ -44,10 +46,8 @@
 		<Unit filename="couleurs.h" />
 		<Unit filename="grman.cpp" />
 		<Unit filename="grman.h" />
-		<Unit filename="include/Facile.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="menu.txt" />
-		<Unit filename="src/Facile.cpp" />
 		<Unit filename="widget.cpp" />
 		<Unit filename="widget.h" />
 		<Extensions>

@@ -1,18 +1,18 @@
 14
-7 -1 Lion.bmp
-302 -1 Léopard.bmp
-471 -1 Guépard.bmp
-663 18 Hyène.bmp
-16 227 Buffle.bmp
-169 181 Gnou.bmp
-320 246 Phacochere.bmp
-508 210 zebre.bmp
-696 196 Gazelle.bmp
-200 393 Fourmi.bmp
-496 396 Babouin.bmp
--1 343 hipopotame.bmp
-396 393 Vegetaux.bmp
-663 339 Elephant.bmp
+5 -3 Lion.bmp
+300 -3 Léopard.bmp
+469 -3 Guépard.bmp
+661 16 Hyène.bmp
+14 225 Buffle.bmp
+167 179 Gnou.bmp
+318 244 Phacochere.bmp
+506 208 zebre.bmp
+665 156 Gazelle.bmp
+195 395 Fourmi.bmp
+574 395 Babouin.bmp
+-3 341 hipopotame.bmp
+394 395 Vegetaux.bmp
+665 275 Elephant.bmp
 21
 12 11
 12 13

@@ -10,6 +10,7 @@
 
 #include <allegro.h>
 
+
 namespace grman
 {
 

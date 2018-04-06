@@ -37,7 +37,7 @@
 	<algorithm>
 	<allegro.h>
 
-1523025261 source:c:\users\jerem\documents\projet semestre 4\piscine-master\main.cpp
+1523037426 source:c:\users\jerem\documents\projet semestre 4\piscine-master\main.cpp
 	<iostream>
 	"grman.h"
 	"Facile1.hpp"
@@ -62,7 +62,7 @@
 	<fstream>
 	<string>
 
-1523024685 c:\users\jerem\documents\projet semestre 4\piscine-master\bouclejeu.h
+1523029261 c:\users\jerem\documents\projet semestre 4\piscine-master\bouclejeu.h
 	<iostream>
 	"grman.h"
 	"time.h"
@@ -78,10 +78,10 @@
 	<memory>
 	"C:\Users\jerem\Documents\Projet semestre 4\Piscine-master/grman.h"
 
-1523025028 source:c:\users\jerem\documents\projet semestre 4\piscine-master\bouclejeu.cpp
+1523030264 source:c:\users\jerem\documents\projet semestre 4\piscine-master\bouclejeu.cpp
 	"Bouclejeu.h"
 
-1523022557 c:\users\jerem\documents\projet semestre 4\piscine-master\facile1.hpp
+1523038449 c:\users\jerem\documents\projet semestre 4\piscine-master\facile1.hpp
 	<iostream>
 	<stack>
 	<fstream>
@@ -91,9 +91,167 @@
 	<memory>
 	"C:\Users\jerem\Documents\Projet semestre 4\Piscine-master/grman.h"
 
-1523025028 source:c:\users\jerem\documents\projet semestre 4\piscine-master\facile1.cpp
+1523037091 source:c:\users\jerem\documents\projet semestre 4\piscine-master\facile1.cpp
 	"Facile1.hpp"
 	"sstream"
 	<fstream>
 	<string>
+
+1523030264 source:c:\users\clara benzakine\desktop\piscine-master\bouclejeu.cpp
+	"Bouclejeu.h"
+
+1523029261 c:\users\clara benzakine\desktop\piscine-master\bouclejeu.h
+	<iostream>
+	"grman.h"
+	"time.h"
+	"Facile1.hpp"
+
+1522753589 c:\users\clara benzakine\desktop\piscine-master\grman.h
+	<allegro.h>
+	<string>
+	"couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1522753192 c:\users\clara benzakine\desktop\piscine-master\couleurs.h
+
+1522753099 c:\users\clara benzakine\desktop\piscine-master\coords.h
+	<cmath>
+
+1522951590 c:\users\clara benzakine\desktop\piscine-master\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1523038449 c:\users\clara benzakine\desktop\piscine-master\facile1.hpp
+	<iostream>
+	<stack>
+	<fstream>
+	<vector>
+	<map>
+	<string>
+	<memory>
+	"C:\Users\jerem\Documents\Projet semestre 4\Piscine-master/grman.h"
+
+1522753328 source:c:\users\clara benzakine\desktop\piscine-master\coords.cpp
+	"coords.h"
+
+1522869231 source:c:\users\clara benzakine\desktop\piscine-master\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	<fstream>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1523037426 source:c:\users\clara benzakine\desktop\piscine-master\main.cpp
+	<iostream>
+	"grman.h"
+	"Facile1.hpp"
+	"Bouclejeu.h"
+
+1523004511 source:c:\users\clara benzakine\desktop\piscine-master\widget.cpp
+	"widget.h"
+
+1523038470 source:c:\users\clara benzakine\desktop\piscine-master\facile1.cpp
+	"Facile1.hpp"
+	"sstream"
+	<fstream>
+	<string>
+
+1523051916 source:c:\users\pc\desktop\piscine-master\bouclejeu.cpp
+	"Bouclejeu.h"
+
+1523050072 c:\users\pc\desktop\piscine-master\bouclejeu.h
+	<iostream>
+	"grman.h"
+	"time.h"
+	"Facile1.hpp"
+
+1523050073 c:\users\pc\desktop\piscine-master\grman.h
+	<allegro.h>
+	<string>
+	"couleurs.h"
+	"coords.h"
+	"widget.h"
+
+1523050073 c:\users\pc\desktop\piscine-master\couleurs.h
+
+1523050073 c:\users\pc\desktop\piscine-master\coords.h
+	<cmath>
+
+1523051248 c:\users\pc\desktop\piscine-master\widget.h
+	"grman.h"
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<allegro.h>
+
+1523050878 c:\users\pc\desktop\piscine-master\facile1.hpp
+	<iostream>
+	<stack>
+	<fstream>
+	<vector>
+	<map>
+	<string>
+	<memory>
+	"grman.h"
+
+1523050073 source:c:\users\pc\desktop\piscine-master\coords.cpp
+	"coords.h"
+
+1523050073 source:c:\users\pc\desktop\piscine-master\facile1.cpp
+	"Facile1.hpp"
+	"sstream"
+	<fstream>
+	<string>
+
+1523050073 source:c:\users\pc\desktop\piscine-master\grman.cpp
+	<cmath>
+	<unordered_map>
+	<unordered_set>
+	<utility>
+	<string>
+	<iostream>
+	<regex>
+	<fstream>
+	"grman.h"
+	<allegro.h>
+	<png.h>
+	<loadpng.h>
+	<jpgalleg.h>
+
+1523050073 source:c:\users\pc\desktop\piscine-master\main.cpp
+	<iostream>
+	"grman.h"
+	"Facile1.hpp"
+	"Bouclejeu.h"
+
+1523051248 source:c:\users\pc\desktop\piscine-master\widget.cpp
+	"widget.h"
+
+1523051020 c:\users\pc\desktop\piscine-master\facile.h
+	<iostream>
+	<stack>
+	<fstream>
+	<vector>
+	<map>
+	<string>
+	<memory>
+	"grman.h"
+
+1523050073 source:c:\users\pc\desktop\piscine-master\facile.cpp
+	"Facile.h"
+	"sstream"
 

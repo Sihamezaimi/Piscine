@@ -1,0 +1,16 @@
+7
+61 348 blé.bmp
+46 47 silo.bmp
+357 24 camion.bmp
+629 7 caddie.bmp
+616 150 cereales.bmp
+654 315 recyclage.bmp
+338 280 emballage.bmp
+7
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+6 1

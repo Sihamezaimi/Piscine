@@ -20,7 +20,8 @@ public:
     void bouton_quitter(int* boob);
     void affichage_texte();
     void supprSommet();
-    void ajoutSommet(int* ajout);
+    void AjoutArcs ();
+    void ajoutSommet(Graph g);
 };
 
 #endif // BOUCLEJEU_H_INCLUDED

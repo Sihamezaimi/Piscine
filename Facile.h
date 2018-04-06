@@ -10,7 +10,7 @@
 #include <map>
 #include <string>
 #include <memory>
-#include "C:\Users\jerem\Documents\Projet semestre 4\Piscine-master/grman.h"
+#include "grman.h"
 /*
 //Classe du niveau 1-facile
 class Facile

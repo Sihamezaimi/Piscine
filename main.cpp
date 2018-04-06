@@ -1,6 +1,5 @@
 #include <iostream>
 #include "grman.h"
-
 #include "Facile1.hpp"
 #include "Bouclejeu.h"
 
@@ -28,7 +27,7 @@ int main()
     clear_bitmap(page);
 
     // charger images de fond/menu
-    decor=load_bitmap("pics/Topological.bmp",NULL);
+    decor=load_bitmap("pics/topological.bmp",NULL);
     if (!decor)
     {
         allegro_message("n'a pas pu trouver topological.bmp");
@@ -62,7 +61,7 @@ int main()
 
      ///Graphe niveau 3 (difficile)
     Graph y;
-    //y.make_exampleC();
+    y.make_exampleC();
 
     ///BOUCLE DE JEU
       while ( !key[KEY_ESC] &&  (boob !=1) )
@@ -78,31 +77,44 @@ int main()
             //Condition pour quitter la boucle de presentation
             debut = 1;
 
-            //Initialisation de choix
+            ///Initialisation de choix
 
             //std::cout<<"Choix vaut desormais: "<<choix<<std::endl;
-            //Choix parmis les 3 graphes
+            ///Choix parmis les 3 graphes
             if((mouse_b & 1) && (mouse_y > 530) && (mouse_x > 270))
                 choix = b.Init_choix();
 
            if(choix=="1")
             {
                 b.Chargement1(g);
-                //SAVE
+
+                ///SAVE
                 b.bouton_save(g,"Graphe.txt");
+
+                ///Ajout de composantes
+                //b.ajoutSommet(g);
+
             }
             if(choix=="2")
             {
                 b.Chargement2(x);
-                //SAVE
+
+                ///SAVE
                 b.bouton_save(x,"Graphe2.txt");
+
+               ///Ajout de composantes
+                //b.ajoutSommet(x);
+
             }
             if(choix=="3")
             {
-                std::cout<<"menu trois"<<std::endl;
-                //b.Chargement3(y);
-                //SAVE
+                  b.Chargement3(y);
+
+                ///SAVE
                   b.bouton_save(y,"Graphe3.txt");
+
+                  ///Ajout de composantes
+                  //b.ajoutSommet(y);
 
             }
 
@@ -112,11 +124,8 @@ int main()
                 Chargement0(&choix);
             }*/
 
-            //Ajout de composantes
-            b.ajoutSommet(&ajout);
-
             //RETOUR
-           // retourMenu(page,decor,,choix);
+            // retourMenu(page,decor,,choix);
 
             //Suppression de composantes
 

@@ -10,7 +10,8 @@
 #include <map>
 #include <string>
 #include <memory>
-#include "C:\Users\jerem\Documents\Projet semestre 4\Piscine-master/grman.h"
+///#include "C:PC/Desktop/Piscine-master/grman.h"
+#include "grman.h"
 /*
 //Classe du niveau 1-facile
 class Facile
@@ -122,6 +123,7 @@ class Vertex
         void pre_update();
         void post_update();
         void supprimer();
+
 };
 
 
@@ -292,12 +294,17 @@ class Graph
         /// Méthode spéciale qui construit un graphe à partir de fichiers.txt
         void make_example();
         void make_exampleB();
+        void make_exampleC();
 
         /// La méthode update à appeler dans la boucle de jeu pour les graphes avec interface
         void update();
         void load_file(std::string filename);
         void save_file(std::string filename);
         void supprimer();
+        void AjoutArcs();
+        void test_remove_edge (int idx);
+        void test_remove_vertex(int eidx);
+        void RetirerArete ();
 };
 
 #endif // FACILE1_HPP_INCLUDED

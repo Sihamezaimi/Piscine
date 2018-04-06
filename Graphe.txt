@@ -1,9 +1,9 @@
 5
-65 45 SOLEIL.bmp
--7 387 PLante.bmp
-268 186 criquet.bmp
-562 313 souris.bmp
-514 36 serpent.bmp
+-7 -7 SOLEIL.bmp
+61 362 PLante.bmp
+277 69 criquet.bmp
+386 367 souris.bmp
+657 -7 serpent.bmp
 4
 0 1
 1 2
