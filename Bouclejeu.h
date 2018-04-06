@@ -3,7 +3,7 @@
 #include <iostream>
 #include "grman.h"
 #include "time.h"
-#include "Facile.h"
+#include "Facile1.hpp"
 
 class Boucle
 {
@@ -16,7 +16,7 @@ public:
     void Chargement1(Graph g);
     void Chargement2(Graph g);
     void Chargement3(Graph g);
-    void bouton_save(Graph g);
+    void bouton_save(Graph g, std::string filename);
     void bouton_quitter(int* boob);
     void affichage_texte();
     void supprSommet();

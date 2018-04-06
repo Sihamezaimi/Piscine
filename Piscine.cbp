@@ -34,6 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Bouclejeu.cpp" />
 		<Unit filename="Bouclejeu.h" />
 		<Unit filename="Graphe.txt" />
 		<Unit filename="coords.cpp" />
@@ -45,6 +46,7 @@
 		<Unit filename="grman.h" />
 		<Unit filename="include/Facile.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="menu.txt" />
 		<Unit filename="src/Facile.cpp" />
 		<Unit filename="widget.cpp" />
 		<Unit filename="widget.h" />

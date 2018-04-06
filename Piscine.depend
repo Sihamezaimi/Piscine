@@ -29,7 +29,7 @@
 
 1522753192 c:\users\jerem\documents\projet semestre 4\piscine-master\couleurs.h
 
-1522949827 c:\users\jerem\documents\projet semestre 4\piscine-master\widget.h
+1522951590 c:\users\jerem\documents\projet semestre 4\piscine-master\widget.h
 	"grman.h"
 	<iostream>
 	<string>
@@ -37,16 +37,16 @@
 	<algorithm>
 	<allegro.h>
 
-1522948738 source:c:\users\jerem\documents\projet semestre 4\piscine-master\main.cpp
+1523025261 source:c:\users\jerem\documents\projet semestre 4\piscine-master\main.cpp
 	<iostream>
 	"grman.h"
-	"Facile.h"
+	"Facile1.hpp"
 	"Bouclejeu.h"
 
-1522868294 source:c:\users\jerem\documents\projet semestre 4\piscine-master\widget.cpp
+1523004511 source:c:\users\jerem\documents\projet semestre 4\piscine-master\widget.cpp
 	"widget.h"
 
-1522949082 c:\users\jerem\documents\projet semestre 4\piscine-master\include\facile.h
+1523018588 c:\users\jerem\documents\projet semestre 4\piscine-master\include\facile.h
 	<iostream>
 	<stack>
 	<fstream>
@@ -56,17 +56,17 @@
 	<memory>
 	"C:\Users\jerem\Documents\Projet semestre 4\Piscine-master/grman.h"
 
-1522946563 source:c:\users\jerem\documents\projet semestre 4\piscine-master\src\facile.cpp
+1523019452 source:c:\users\jerem\documents\projet semestre 4\piscine-master\src\facile.cpp
 	"Facile.h"
 	"sstream"
 	<fstream>
 	<string>
 
-1522945599 c:\users\jerem\documents\projet semestre 4\piscine-master\bouclejeu.h
+1523024685 c:\users\jerem\documents\projet semestre 4\piscine-master\bouclejeu.h
 	<iostream>
 	"grman.h"
 	"time.h"
-	"Facile.h"
+	"Facile1.hpp"
 
 1522805105 c:\users\jerem\documents\projet semestre 4\piscine-master\facile.h
 	<iostream>
@@ -78,6 +78,22 @@
 	<memory>
 	"C:\Users\jerem\Documents\Projet semestre 4\Piscine-master/grman.h"
 
-1522948073 source:c:\users\jerem\documents\projet semestre 4\piscine-master\bouclejeu.cpp
+1523025028 source:c:\users\jerem\documents\projet semestre 4\piscine-master\bouclejeu.cpp
 	"Bouclejeu.h"
+
+1523022557 c:\users\jerem\documents\projet semestre 4\piscine-master\facile1.hpp
+	<iostream>
+	<stack>
+	<fstream>
+	<vector>
+	<map>
+	<string>
+	<memory>
+	"C:\Users\jerem\Documents\Projet semestre 4\Piscine-master/grman.h"
+
+1523025028 source:c:\users\jerem\documents\projet semestre 4\piscine-master\facile1.cpp
+	"Facile1.hpp"
+	"sstream"
+	<fstream>
+	<string>
 

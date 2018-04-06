@@ -134,7 +134,7 @@ class Widget
         void set_pos(int x, int y) { set_posx(x); set_posy(y); }
         void set_pos(Coords pos) { set_posx(pos.x); set_posy(pos.y); }
 
-        int get_posx() { return m_frame.pos.x-get_parent_bp(); }
+        int get_posx() { return m_frame.pos.x-get_parent_bp(); }    //
         int get_posy() { return m_frame.pos.y-get_parent_bp(); }
         Coords get_pos() { return Coords(get_posx(), get_posy()); }
 

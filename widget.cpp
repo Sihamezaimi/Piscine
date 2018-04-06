@@ -177,8 +177,6 @@ void WidgetText::set_message(std::string message)
     reframe();
 }
 
-
-
 /***************************************************
                     CHECKBOX
 ****************************************************/
@@ -399,7 +397,4 @@ void WidgetEdge::draw()
     }
 
 }
-
-
-
 }

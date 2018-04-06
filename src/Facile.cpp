@@ -15,10 +15,10 @@ VertexInterface::VertexInterface(int idx, int x, int y, std::string pic_name, in
     m_top_box.set_moveable();
 
     // Le slider de réglage de valeur
-   /* m_top_box.add_child( m_slider_value );
+    m_top_box.add_child( m_slider_value );
     m_slider_value.set_range(0.0 , 100.0); // Valeurs arbitraires, à adapter...
     m_slider_value.set_dim(20,80);
-    m_slider_value.set_gravity_xy(grman::GravityX::Left, grman::GravityY::Up);*/
+    m_slider_value.set_gravity_xy(grman::GravityX::Left, grman::GravityY::Up);
 
     // Label de visualisation de valeur
     m_top_box.add_child( m_label_value );
@@ -43,9 +43,25 @@ VertexInterface::VertexInterface(int idx, int x, int y, std::string pic_name, in
 
     m_top_box.add_child( m_croix);
     m_croix.set_gravity_xy(grman::GravityX::Right, grman::GravityY::Up);
-    m_croix.set_dim(20,20);
+    m_croix.set_dim(7,7);
     m_croix.set_bg_color(ROUGE);
-    m_croix.set_message("X");
+
+    m_top_box.add_child(m_croixtext);
+    m_croixtext.set_gravity_xy(grman::GravityX::Right, grman::GravityY::Up);
+    m_croixtext.set_message("X");
+
+   /*
+    //SUPPRESSION
+    if(mouse_b &1)
+    {
+        if((mouse_x >=m_croix.get_posx()-5) && (mouse_x<=m_croix.get_posx()+25)
+           && (mouse_y>=m_croix.get_posy()-5) && (mouse_y<=m_croix.get_posy()+25))
+        //if((mouse_x >= 0) && (mouse_y >=0))
+        {
+            std::cout<<"CA A FONCTIONNNER\t";
+        }
+    }
+*/
 }
 
 /// Gestion du Vertex avant l'appel à l'interface
@@ -53,12 +69,13 @@ void Vertex::pre_update()
 {
     if (!m_interface)
         return;
+        supprimer();
 
     /// Copier la valeur locale de la donnée m_value vers le slider associé
-   // m_interface->m_slider_value.set_value(m_value);
+    m_interface->m_slider_value.set_value(m_value);
 
     /// Copier la valeur locale de la donnée m_value vers le label sous le slider
-//    m_interface->m_label_value.set_message( std::to_string( (int)m_value) );
+    //m_interface->m_label_value.set_message( std::to_string( (int)m_value) );
 }
 
 
@@ -69,7 +86,7 @@ void Vertex::post_update()
         return;
 
     /// Reprendre la valeur du slider dans la donnée m_value locale
-   // m_value = m_interface->m_slider_value.get_value();
+    m_value = m_interface->m_slider_value.get_value();
 }
 
 
@@ -92,7 +109,7 @@ EdgeInterface::EdgeInterface(Vertex& from, Vertex& to)
     m_top_edge.reset_arrow_with_bullet();
 
     // Une boite pour englober les widgets de réglage associés
-    /*m_top_edge.add_child(m_box_edge);
+    m_top_edge.add_child(m_box_edge);
     m_box_edge.set_dim(24,60);
     m_box_edge.set_bg_color(BLANCBLEU);
 
@@ -100,12 +117,11 @@ EdgeInterface::EdgeInterface(Vertex& from, Vertex& to)
     m_box_edge.add_child( m_slider_weight );
     m_slider_weight.set_range(0.0 , 100.0); // Valeurs arbitraires, à adapter...
     m_slider_weight.set_dim(16,40);
-    m_slider_weight.set_gravity_y(grman::GravityY::Up);*/
+    m_slider_weight.set_gravity_y(grman::GravityY::Up);
 
     // Label de visualisation de valeur
     m_box_edge.add_child( m_label_weight );
     m_label_weight.set_gravity_y(grman::GravityY::Down);
-
 }
 
 
@@ -116,7 +132,7 @@ void Edge::pre_update()
         return;
 
     /// Copier la valeur locale de la donnée m_weight vers le slider associé
-//    m_interface->m_slider_weight.set_value(m_weight);
+    m_interface->m_slider_weight.set_value(m_weight);
 
     /// Copier la valeur locale de la donnée m_weight vers le label sous le slider
 //    m_interface->m_label_weight.set_message( std::to_string( (int)m_weight ) );
@@ -129,7 +145,7 @@ void Edge::post_update()
         return;
 
     /// Reprendre la valeur du slider dans la donnée m_weight locale
-//    m_weight = m_interface->m_slider_weight.get_value();
+    m_weight = m_interface->m_slider_weight.get_value();
 }
 
 
@@ -233,65 +249,35 @@ GraphInterface::GraphInterface(int x, int y, int w, int h)
 
    //Creation du texte retour menu
    m_top_box.add_child(m_B);
-   m_B.set_message("B");
+   m_B.set_message("I");
    m_B.set_pos(987,520);
 
    m_top_box.add_child(m_A);
-   m_A.set_message("A");
+   m_A.set_message("N");
    m_A.set_pos(988,532);
 
    m_top_box.add_child(m_C);
-   m_C.set_message("C");
+   m_C.set_message("F");
    m_C.set_pos(987,544);
 
    m_top_box.add_child(m_K);
-   m_K.set_message("K");
+   m_K.set_message("O");
    m_K.set_pos(987,556);
 
    m_top_box.add_child(m_Q);
    m_Q.set_message("Q");
    m_Q.set_pos(987,586);
 
-}
+    }
+
+
 
 void Graph::make_example()
 {
-    m_interface = std::make_shared<GraphInterface>(50, 0, 750, 600);
-    load_file("Graphe.txt");
-
-   /* if((mouse_b & 1) && (mouse_y > 530) && (mouse_x > 270))
-    {
-
-    }*/
-
     // La ligne précédente est en gros équivalente à :
     // m_interface = new GraphInterface(50, 0, 750, 600);
-
-  /// Les sommets doivent être définis avant les arcs
-    // Ajouter le sommet d'indice 0 de valeur 30 en x=200 et y=100 avec l'image
-    /*add_interfaced_vertex(0, 30.0, 200, 100, "SOLEIL.bmp");
-    add_interfaced_vertex(1, 60.0, 400, 100, "PLante.bmp");
-    add_interfaced_vertex(2,  50.0, 200, 300, "criquet.bmp");
-    add_interfaced_vertex(3,  0.0, 400, 300, "souris.bmp");
-    add_interfaced_vertex(4,  100.0, 600, 300, "serpent.bmp");*/
-
-    /*add_interfaced_vertex(5,  0.0, 100, 500, "bad_clowns_xx3xx.jpg", 0);
-    add_interfaced_vertex(6,  0.0, 300, 500, "bad_clowns_xx3xx.jpg", 1);
-    add_interfaced_vertex(7,  0.0, 500, 500, "bad_clowns_xx3xx.jpg", 2);*/
-
-    /// Les arcs doivent être définis entre des sommets qui existent !
-    // AJouter l'arc d'indice 0, allant du sommet 0 au sommet 1 de poids 50 etc...
-    /*add_interfaced_edge(0, 0, 1, 50.0);
-    add_interfaced_edge(1, 1, 2, 50.0);
-    add_interfaced_edge(2, 2, 3, 75.0);
-    add_interfaced_edge(3, 3, 4, 25.0);*/
-
-    /*add_interfaced_edge(4, 6, 3, 25.0);
-    add_interfaced_edge(5, 7, 3, 25.0);
-    add_interfaced_edge(6, 3, 4, 0.0);
-    add_interfaced_edge(7, 2, 0, 100.0);
-    add_interfaced_edge(8, 5, 2, 20.0);
-    add_interfaced_edge(9, 3, 7, 80.0);*/
+    m_interface = std::make_shared<GraphInterface>(50, 0, 750, 600);
+    load_file("Graphe.txt");
 }
 
 void Graph::make_exampleB()
@@ -304,6 +290,46 @@ void Graph::make_exampleB()
 /// La méthode update à appeler dans la boucle de jeu pour les graphes avec interface
 void Graph::update()
 {
+    int i=0;
+//AJOUT DE SOMMET
+    if(m_interface->m_ajoumenu.clicked())
+    {
+        int a, b;
+        std::cout << "NEW !" << std::endl;
+        grman::WidgetBox * clown = new grman::WidgetBox();
+        //grman::WidgetImage * clown1 = new grman::WidgetImage();
+        m_interface->m_top_box.add_child( *clown );
+        //clown1->set_pic_name("SOLEIL.bmp");
+        a=rand()%600+10;
+        b=rand()%400+100;
+        //clown1->set_pos(a, b );
+        clown->set_pos(a,b);
+        clown->set_dim(130,100);
+        clown->set_moveable();
+
+    for (auto &elt : m_vertices){
+        i++;
+        }
+        //add_interfaced_vertex(i,10.0,a,b,"SOLEIL.bmp",1);
+        //add_interfaced_edge()
+        }
+
+//SUPPRESSION DE SOMMET
+/* if ( m_interface->m_map1.clicked() )
+    {
+        std::cout << "ARGHHH !" << std::endl;
+
+        /// Expérimental, retrait dynamique d'éléments
+        grman::WidgetImage * clown = m_interface; // On pourrait déclarer auto ...
+
+        // On est pas obligé d'enlever les éléments dans l'ordre inverse de leur ajout
+        // il suffit de se souvenir de l'adresse de l'élément à supprimer
+        m_interface->m_top_box.remove_child( *clown );
+
+        /// Le remove de la collection ne détruit pas l'objet
+        /// C'est la responsabilité de la classe qui a fait new de faire delete
+        delete clown;
+    }*/
     if (!m_interface)
         return;
 
@@ -320,7 +346,6 @@ void Graph::update()
 
     for (auto &elt : m_edges)
         elt.second.post_update();
-
 }
 
 /// Aide à l'ajout de sommets interfacés
@@ -423,8 +448,21 @@ void Graph::save_file(std::string filename)
     fichier.close();
 }
 
-void supprimer()
+void Vertex::supprimer()
 {
-
+    if(m_interface->m_croix.clicked())
+    {
+        std::cout<<"Supprimer sommet!"<<std::endl;
+    }
 }
 
+void Graph::Deux()
+{
+    std::cout<<"Chloefit"<<std::endl;
+}
+
+void Graph::Essai()
+{
+    m_interface = std::make_shared<GraphInterface>(50, 0, 750, 600);
+    std::cout<<"Chloefit"<<std::endl;
+}

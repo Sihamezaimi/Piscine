@@ -1,7 +1,7 @@
 #include <iostream>
 #include "grman.h"
 
-#include "Facile.h"
+#include "Facile1.hpp"
 #include "Bouclejeu.h"
 
 using namespace std;
@@ -58,7 +58,8 @@ int main()
     g.make_example();
     ///Graphe niveau 2 (moyen)
     Graph x;
-    //x.make_exampleB();
+    x.make_exampleB();
+
      ///Graphe niveau 3 (difficile)
     Graph y;
     //y.make_exampleC();
@@ -87,16 +88,21 @@ int main()
            if(choix=="1")
             {
                 b.Chargement1(g);
+                //SAVE
+                b.bouton_save(g,"Graphe.txt");
             }
             if(choix=="2")
             {
-                std::cout<<"menu deux"<<std::endl;
-                //b.Chargement2(x);
+                b.Chargement2(x);
+                //SAVE
+                b.bouton_save(x,"Graphe2.txt");
             }
             if(choix=="3")
             {
                 std::cout<<"menu trois"<<std::endl;
                 //b.Chargement3(y);
+                //SAVE
+                  b.bouton_save(y,"Graphe3.txt");
 
             }
 
@@ -111,9 +117,6 @@ int main()
 
             //RETOUR
            // retourMenu(page,decor,,choix);
-
-            //SAVE
-            b.bouton_save(g);
 
             //Suppression de composantes
 

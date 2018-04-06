@@ -39,13 +39,14 @@ void Boucle::bouton_quitter(int* boob)
     }
 }
 
-void Boucle::bouton_save(Graph g)
+void Boucle::bouton_save(Graph g,std::string filename)
 {
     if (mouse_b & 1)
     {
         if(mouse_x > 90 && mouse_y > 518 && mouse_x<=150 && mouse_y<=578)
         {
-            g.save_file("Graphe.txt");
+            g.save_file(filename);
+            std::cout<<"1\n";
         }
     }
 }
@@ -134,14 +135,16 @@ void Boucle::retourMenu(BITMAP *page,BITMAP *decor, int choix, bool boule)
 std::string Boucle::Menu()
 {
     std::string choix="7";
-
     while (choix != "1" && choix != "2" && choix != "3")
     {
         std::cout<< "Choisir un graphe:"<<std::endl;
+        std::cout<<"\n";
         std::cout<<"1. Graphe simple "<<std::endl;
         std::cout<<"2. Graphe maritime "<<std::endl;
         std::cout<<"3. Graphe complex"<<std::endl;
         std::cin>> choix;
+
+
     }
     return choix;
 }

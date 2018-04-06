@@ -57,7 +57,7 @@ class VertexInterface
         grman::WidgetBox m_top_box;
 
         // Un slider de visualisation/modification de la valeur du sommet
-//        grman::WidgetVSlider m_slider_value;
+        grman::WidgetVSlider m_slider_value;
 
         // Un label de visualisation de la valeur du sommet
         grman::WidgetText m_label_value;
@@ -67,7 +67,8 @@ class VertexInterface
 
         // Un label indiquant l'index du sommet
         grman::WidgetText m_label_idx;
-        grman::WidgetText m_croix;
+        grman::WidgetButton m_croix;
+        grman::WidgetText m_croixtext;
         // Une boite pour le label précédent
         grman::WidgetText m_box_label_idx;
 
@@ -120,6 +121,7 @@ class Vertex
         /// Voir l'implémentation Graph::update dans le .cpp
         void pre_update();
         void post_update();
+        void supprimer();
 };
 
 
@@ -144,7 +146,7 @@ class EdgeInterface
         grman::WidgetBox m_box_edge;
 
         // Un slider de visualisation/modification du poids valeur de l'arc
-        // grman::WidgetVSlider m_slider_weight;
+        grman::WidgetVSlider m_slider_weight;
 
         // Un label de visualisation du poids de l'arc
         grman::WidgetText m_label_weight;
@@ -212,10 +214,10 @@ class GraphInterface
         /// La boite qui contient toute l'interface d'un graphe
         grman::WidgetBox m_top_box;
         //Ajout et SAVE
-        grman::WidgetBox m_ajoumenu;
-        grman::WidgetBox m_suppr;
+        grman::WidgetButton m_ajoumenu;
+        grman::WidgetButton m_suppr;
         //MAP1
-        grman::WidgetBox m_map1;
+        grman::WidgetButton m_map1;
         //MAP2
         grman::WidgetBox m_map2;
         //MAP3
@@ -227,6 +229,7 @@ class GraphInterface
         //Bouton retour
         grman::WidgetBox m_retour;
 
+        //Suppr
         grman::WidgetBox m_box_label_idx;
 
         //TEXTE
@@ -288,15 +291,14 @@ class Graph
 
         /// Méthode spéciale qui construit un graphe à partir de fichiers.txt
         void make_example();
-     //?
-        void make_exampleC();   //?
-
 
         /// La méthode update à appeler dans la boucle de jeu pour les graphes avec interface
         void update();
         void load_file(std::string filename);
         void save_file(std::string filename);
-        void make_exampleB();
+        void Deux();
+        void supprimer();
+        void Essai();
 };
 
 
